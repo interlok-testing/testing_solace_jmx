@@ -8,7 +8,7 @@ This project contains a single instance of Interlok that will attempt to connect
 Here we'll be using  Solace as that messaging proxy.
 Once set up you'll be able to communicate with your Interlok instances via JMS rather JMXMP.
  
-![Solace diagram](/Solace.png "Solace diagram")
+![Solace diagram](/solace.png "Solace diagram")
  
 ## Getting started
 
