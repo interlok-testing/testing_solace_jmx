@@ -1,0 +1,18 @@
+```plantuml
+@startuml
+storage Solace {
+usecase Endpoint[
+Endpoint
+]
+}
+
+storage Interlok {
+usecase JMX [
+JMX
+]
+}
+
+Client -> Endpoint
+Endpoint -> JMX
+@enduml
+```
