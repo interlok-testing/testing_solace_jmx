@@ -1,5 +1,8 @@
 # JMX proxy via Solace Testing
 
+[![license](https://img.shields.io/github/license/interlok-testing/testing_solace_jmx.svg)](https://github.com/interlok-testing/testing_solace_jmx/blob/develop/LICENSE)
+[![Actions Status](https://github.com/interlok-testing/testing_solace_jmx/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/interlok-testing/testing_solace_jmx/actions/workflows/gradle-build.yml)
+
 Project tests interlok-jmx-Solace features
 
 ## What it does
