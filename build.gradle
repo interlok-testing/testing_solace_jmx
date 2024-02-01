@@ -6,27 +6,8 @@ plugins {
 ext {
   interlokParentGradle = "https://raw.githubusercontent.com/adaptris/interlok-build-parent/main/v5/build.gradle"
   interlokVersion = '5.0-SNAPSHOT'
-
-  nexusBaseUrl  = 'https://nexus.adaptris.net'
-  
+  // Include the WAR file since by default it is excluded.
   includeWar='true'
-}
-
-repositories {
-    mavenCentral() {
-      content {
-        excludeGroupByRegex "com\\.adaptris.*"
-      }
-    }
-	maven {
-      credentials {
-        username repoUsername
-        password repoPassword
-      }
-      url "$nexusBaseUrl/nexus/content/groups/private"
-    }
-    maven { url "${nexusBaseUrl}/nexus/content/groups/public" }
-    maven { url "${nexusBaseUrl}/nexus/content/groups/interlok" }
 }
 
 allprojects {

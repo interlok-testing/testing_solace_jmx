@@ -21,6 +21,6 @@ Once set up you'll be able to communicate with your Interlok instances via JMS r
 ## Configuring the client side
 
 Our client will simply be the UI, which will usually communicate to instances via JMXMP.  Add a new instance on the dashboard page and set the following properties;
- - __url__ = service:jmx:solace:///smf://localhost:55555?jmx.type=Topic&jmx.destination=SampleT4
+ - __url__ = service:jmx:solace:///smf://localhost:55555?jmx.type=Topic&jmx.destination=jmxTopic
  - __username__ = admin (or other configured user)
  - __password__ = admin (or other configured password)

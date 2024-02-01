@@ -71,7 +71,6 @@
             <session-factory class="jms-default-producer-session"/>
             <endpoint>jms:topic:Sample.T1</endpoint>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>jms-jms-workflow</unique-id>
           <message-metrics-interceptor>
             <unique-id>jms-jms-workflow-MessageMetrics</unique-id>
@@ -102,7 +101,6 @@
             <unique-id>jcsmp-jcsmp-consumer</unique-id>
             <message-translator class="solace-jcsmp-text-message-translator">
               <delivery-mode>PERSISTENT</delivery-mode>
-              <mappings/>
             </message-translator>
             <endpoint-permissions>CONSUME</endpoint-permissions>
             <endpoint-access-type>EXCLUSIVE</endpoint-access-type>
@@ -117,11 +115,9 @@
             <unique-id>jcsmp-jcsmp-producer</unique-id>
             <message-translator class="solace-jcsmp-text-message-translator">
               <delivery-mode>PERSISTENT</delivery-mode>
-              <mappings/>
             </message-translator>
             <topic>Sample.T1</topic>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>jcsmp-jcsmp-workflow</unique-id>
           <message-metrics-interceptor>
             <unique-id>jcsmp-jcsmp-workflow-MessageMetrics</unique-id>
@@ -162,11 +158,9 @@
             <unique-id>jms-jcsmp-producer</unique-id>
             <message-translator class="solace-jcsmp-text-message-translator">
               <delivery-mode>PERSISTENT</delivery-mode>
-              <mappings/>
             </message-translator>
             <topic>Sample.T1</topic>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>jms-jcsmp-workflow</unique-id>
           <message-metrics-interceptor>
             <unique-id>jms-jcsmp-workflow-MessageMetrics</unique-id>
