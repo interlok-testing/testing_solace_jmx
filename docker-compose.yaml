@@ -19,6 +19,7 @@ services:
       nofile:
         soft: 2448
         hard: 1048576
+    hostname: solace-1
     deploy:
       restart_policy:
         condition: on-failure
@@ -64,10 +65,10 @@ services:
       - username_admin_password=admin
       - system_scaling_maxconnectioncount=100
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:5550/healthcheck/ready" ] # Example for a ready check
+      test: curl -X GET --fail -u admin:admin solace-1:8080/SEMP/v2/config/msgVpns/default/queues
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 20s
+      start_period: 60s
 volumes:
   storage-group:
